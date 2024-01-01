@@ -13,6 +13,16 @@ namespace MNKHprocessor
         static string spreadsheet_prename_out = "SovietSpreadsheet_T"; //appends {turn number}.xlsx
 
         public static void RenderSpreadsheet(TurnData turn_data) {
+            //https://stackoverflow.com/questions/25134024/clean-up-excel-interop-objects-with-idisposable/25135685#25135685
+            //https://stackoverflow.com/questions/17130382/understanding-garbage-collection-in-net/17131389#17131389
+            try {
+                RenderSpreadsheetInner(turn_data);
+            } finally {
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+            }
+        }
+        static void RenderSpreadsheetInner(TurnData turn_data) {
 
             Application xlApp = new Application();
             xlApp.Visible = true;
