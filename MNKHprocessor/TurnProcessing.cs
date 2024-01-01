@@ -34,14 +34,16 @@ namespace MNKHprocessor
         public int turn;
         public int free_dice;
         public int max_resources;
+        public static int crit_max = 2;
     }
     class TurnProcessor
     {
         static string turn_in = "text/turnPost.txt";
         public static string[] section_names = new string[] { "Infrastructure", "Heavy Industry", "Rocketry", "Light and Chemical Industry", "Agriculture", "Services", "Bureaucracy", "Ministry Actions" };
         public static string[] indicator_names = new string[] { "General Labor", "Educated Labor", "Electricity", "Steel", "Coal", "Non-Ferrous", "Petroleum Fuels", "Petrochemicals" };
+        public static string[] indicator_short_names = new string[] { "GL", "EL", "E", "S", "C", "NF", "PF", "P" };
         static int get_global_bonus() { //Affects reform rolls too
-            return -6; //Management XP
+            return -4; //Management XP
         }
         static int get_bonus(string name, SectionData section) {
             int bonus = 0;
@@ -50,7 +52,7 @@ namespace MNKHprocessor
             bonus += 5; //Stat Planning
             bonus += 5; //Telecomms
             if (section.name != "Bureaucracy") {
-                bonus -= 15; //Anti-corruption
+                bonus -= 5; //Anti-corruption
             }
 
             bonus += get_global_bonus();

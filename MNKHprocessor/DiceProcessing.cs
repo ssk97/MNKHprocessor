@@ -11,7 +11,6 @@ namespace MNKHprocessor
     class DiceProcessing
     {
         static bool COLORING = true;
-        static int crit_max = 2;
 
         static string plan_in = "text/plan.txt";
         static string dice_in = "text/dice.txt";
@@ -118,7 +117,7 @@ namespace MNKHprocessor
                     string dice_formatted = "";
                     string dice_final = "";
                     string color = "";
-                    string crits = "";
+                    StringBuilder crits = new StringBuilder();
                     ActionData action = FindAction(action_plan_name, turn.sections);
                     string action_name = action.name;//Use cannonical name instead of the plan's
                     if (last_section != action.section_name) {
@@ -151,29 +150,29 @@ namespace MNKHprocessor
                                 int dice = dice_raw.Dequeue();
                                 total_sum += dice;
                                 str.Append('+').Append(dice.ToString());
-                                if (dice == 1) { crits += Colorize(" (Nat 1)", "255,0,0"); }
-                                if (dice == 2) { crits += Colorize(" (Nat 2)", "255,0,0"); }
-                                if (dice == 100) { crits += Colorize(" (Nat 100)", "0,255,0"); }
+                                if (dice == 1) { crits.Append(Colorize(" (Nat 1)", "255,0,0")); }
+                                if (dice == 2) { crits.Append(Colorize(" (Nat 2)", "255,0,0")); }
+                                if (dice == 100) { crits.Append(Colorize(" (Nat 100)", "0,255,0")); }
                             }
                             if (total_sum < action.prog_max && prob2 >= 0.1) {
                                 color = "255,0,0";
                             }
                             if (total_sum + 15 >= action.prog_max && total_sum < action.prog_max) {
-                                crits += Colorize(" (omake?)", "50,200,50");
+                                crits.Append(Colorize(" (omake?)", "50,200,50"));
                             }
                             if (total_sum >= action.prog_max) {
                                 color = "0,255,0";
                             }
 
                             if (total_sum >= action.prog_max * 4) {
-                                crits += Colorize(" (4x target)", "150,100,100");
+                                crits.Append(Colorize(" (4x target)", "150,100,100"));
                             } else if (total_sum >= action.prog_max * 2) {
-                                crits += Colorize(" (2x target)", "200,50,50");
+                                crits.Append(Colorize(" (2x target)", "200,50,50"));
                             }
                             if (prob3 > 0) {
-                                crits += Colorize(string.Concat("(",
+                                crits.Append(Colorize(string.Concat("(",
                                     prob.ToString("P"), "/",
-                                    prob3.ToString("P"), ")"), "150,150,150");
+                                    prob3.ToString("P"), ")"), "150,150,150"));
                             }
 
                             str.Append('=');
@@ -185,8 +184,14 @@ namespace MNKHprocessor
 
                             dice_formatted = str.ToString();
                             if (total_sum + 15 >= action.prog_max) {
-                                foreach (KeyValuePair<string, int> ind in action.indicators) {
-                                    indicators[ind.Key] = indicators.GetValueOrDefault(ind.Key, 0) + ind.Value;
+                                foreach (string ind_name in TurnProcessor.indicator_names) {
+                                    if (action.indicators.ContainsKey(ind_name)) {
+                                        int amount = action.indicators[ind_name];
+                                        indicators[ind_name] = indicators.GetValueOrDefault(ind_name, 0) + amount;
+                                        int idx = Array.IndexOf(TurnProcessor.indicator_names, ind_name);
+                                        string short_name = TurnProcessor.indicator_short_names[idx];
+                                        crits.Append(", " + short_name + ": " + amount);
+                                    }
                                 }
                             }
                             break;
@@ -197,8 +202,8 @@ namespace MNKHprocessor
                                 int dice = dice_raw.Dequeue();
                                 tmp_sum += dice;
                                 dice_formatted += "+" + dice.ToString();
-                                if (dice <= crit_max) { crits += Colorize(" (Nat " + dice + ")", "255,0,0"); }
-                                if (dice == 100) { crits += Colorize(" (Nat 100)", "0,255,0"); }
+                                if (dice <= TurnData.crit_max) { crits.Append(Colorize(" (Nat " + dice + ")", "255,0,0")); }
+                                if (dice == 100) { crits.Append(Colorize(" (Nat 100)", "0,255,0")); }
                             }
                             dice_formatted += "=";
                             dice_final = tmp_sum.ToString();
