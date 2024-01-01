@@ -37,7 +37,7 @@ namespace MNKHprocessor
     }
     class TurnProcessor
     {
-        static string turn_in = "turnPost.txt";
+        static string turn_in = "text/turnPost.txt";
         public static string[] section_names = new string[] { "Infrastructure", "Heavy Industry", "Rocketry", "Light and Chemical Industry", "Agriculture", "Services", "Bureaucracy", "Ministry Actions" };
         public static string[] indicator_names = new string[] { "General Labor", "Educated Labor", "Electricity", "Steel", "Coal", "Non-Ferrous", "Petroleum Fuels", "Petrochemicals" };
         static int get_global_bonus() { //Affects reform rolls too

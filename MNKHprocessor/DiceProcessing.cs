@@ -13,8 +13,8 @@ namespace MNKHprocessor
         static bool COLORING = true;
         static int crit_max = 2;
 
-        static string plan_in = "plan.txt";
-        static string dice_in = "dice.txt";
+        static string plan_in = "text/plan.txt";
+        static string dice_in = "text/dice.txt";
         //https://en.wikipedia.org/wiki/Longest_common_subsequence_problem
         static int LcsLength(string a, string b) {
             int[,] C = new int[a.Length + 1, b.Length + 1]; // (a, b).Length + 1
