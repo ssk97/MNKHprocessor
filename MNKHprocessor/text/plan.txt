@@ -1,37 +1,39 @@
-[X]Plan We Still Have an Agriculture Target to Meet
--[X]Infrastructure (9/9 dice) 765 Resources
---[X]Western USSR Regional Roads, 2 dice (170R) 17%
---[X]Ural Regional Roads, 3 dice (255R) 0%
---[X]Caucasus High Capacity Roads, 3 dice (255R) 28%
---[X]Caucasus Regional Roads, 1 die (85 R) 7%
--[X]Heavy Industry (7/5 dice) 970 Resources
---[X]Bakchar Deposit Utilization(Stage 1), 5 dice (750R) 69%
---[X]Kuzbas Deposit Exploitation(Stage 3), 2 dice (220R) 35%
--[X]Rocketry (2/2 dice) 0 Resources
---[X]New Crewed Programs, 1 die
---[X]Allow Enterprise Bidding, 1 die
--[X]Light and Chemical Industry (6/6 dice) 800 Resources
---[X]Samotor Field Development(Stage 1), 2 Dice (220 R), 81%
---[X]Consumer Goods Production Grants(Stage 1), 3 dice (360 R) 72%
---[X]Self-Aligned Gate Prototypes, 1 die (220R) 52%
--[X]Agriculture (8/6 dice) 900 Resources
---[X]Agronomy Institutes, 1 die (100 R) 63%
---[X]Increasing Mechanization, 2 dice (400R) 0%
---[X]Combined Agricultural Methodologies, 2 dice (180R) 53%
---[X]Third Generation Pesticides, 3 dice (420 R), 72%
--[X]Services (10/10 dice) 1160 Resources
---[X]Distribution of Banking Branches, 1 die (80 R) 80%
---[X]Transportation Enterprises(Stage 2), 2 Dice (220 R), 32%
---[X]Legal Consulting Programs, 1 die (80 R) 46%
---[X]Universalization of Telephone Networking, 3 Dice (420 R), 57%
---[X]Solving the Garbage Problem, 3 Dice (360 R), 39%
--[X]Bureaucracy (8/8 dice) 0 Resources
---[X] Labor Reserve Reforms, 1 SupSov Die
---[X]Inflation Control Measures, 1 SupSov Die
---[X] New MNKh Deputy, 1 SupSov Die
---[X]Coal-Industry Economization, 1 die
---[X]Reorganization of Agricultural Subsidies, 1 die
---[X]Price Loss Coverage, 1 die
---[X]Farmer Flexibility Legislation, 1 die
---[X]Dedicate Focus (Bakchar), 1 SupSov die (unrolled)
--[X]Total Cost: 4595/4985 Resources leaving 390 reserved, 49 dice rolled
+[X] Plan Oil Good
+-[X]4330/4340 Resources (10 Reserve), 46 Dice Rolled
+-[x]Infrastructure (10/9 Dice, 900 R)
+--[X]Western USSR Regional Roads, 1 Dice (90 R), 89%/100%
+--[X]Ural Regional Roads, 4 Dice (360 R), 42%/52%
+--[X]Caucuses Regional Roads, 1 Dice (90 R), 85%/100%
+--[X]Central Asian High Capacity Roads, 2 Dice (180 R), 0%/0%
+--[X]Central Asian Regional Roads, 1 Dice (90 R), 0%/0%
+--[X]Power Grid Expansions, 1 Dice (90 R), 9%/24%
+-[X]Heavy Industry (6/5 Dice, 1030 R)
+--[X]Bakchar Deposit Utilization(Stage 1/3), 2 Dice (260 R), 96%/99%
+--[X]Sevastopol Technical Equipment Plants, 2 Dice (540 R), 30%/43%
+--[X]Kuzbas Deposit Exploitation(Stage 3/5), 1 Dice (90 R), 98%/100%
+--[X]Bryansk Truck Plant, 1 Dice (140 R), 91%/100%
+-[X]Rocketry (2/2 Dice, 0 R)
+--[X]Jovian Programs, 1 Dice
+--[X]Outer System Probes, 1 Dice
+-[X]Light and Chemical Industry (8/6 Dice, 870 R)
+--[X]Caspian Sea Petrochemical Extraction(Stage 1/2), 3 Dice (390 R), 97%/99%
+--[X]Samotor Field Development(Stage 1/3), 3 Dice (300 R), 100%/100%
+--[X]Consumer Goods Production Grants(Stage 1/3), 2 Dice (180 R), 98%/100%
+-[X]Agriculture (6/6 Dice, 580 R)
+--[X]Increasing Mechanization, 1 Dice (90 R), 33%/48%
+--[X]Agricultural Grants, 2 Dice (220 R), 74%/83%
+--[X]Universalization of the Food Program, 3 Dice (270 R), 62%/72%
+-[X]Services (10/10 Dice, 950 R)
+--[X]Transportation Enterprises(Stage 2/5), 1 Dice (100 R), 100%/100%
+--[X]Expanding State Catalogs, 2 Dice (140 R), 48%/62%
+--[X]Universal Distribution Systems, 4 Dice (360 R), 77%/84%
+--[X]Universalization of Telephone Networking, 1 Dice (130 R), 100%/100%
+--[X]State Insurance Enterprises, 1 Dice (110 R), 0%/0%
+--[X]Solving the Garbage Problem, 1 Dice (110 R), 82%/97%
+-[X]Bureaucracy (4/4 Dice, 0 R)
+--[X]Emergency Commission on CMEA, 1 dice
+--[X]Centralization of Worker-Authority, 1 dice
+--[X]Locate a Deputy, 1 Dice
+--[X]Electrification Drives, 1 Dice
+--[X]Break Private Land Limits, 1 Dice
+--[X]Reorganize a Department(Services), 1 Dice
