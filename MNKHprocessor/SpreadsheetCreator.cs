@@ -83,6 +83,7 @@ namespace MNKHprocessor
             foreach (SectionData section in turn_data.sections) {
                 row += 1;
                 int top_row = row;
+                int forced_count = 0;
                 sheet.Cells[top_row, 1] = string.Concat(section.name, " (", section.dice, ")");
                 sheet.Cells[top_row, 1].Font.Bold = true;
                 categoryRows.Add(top_row);
@@ -100,8 +101,13 @@ namespace MNKHprocessor
                     if (action.type == ACTION_TYPES.NORMAL || action.type == ACTION_TYPES.DC) {
                         sheet.Cells[row, 3] = action.prog_max;
                     }
-                    sheet.Cells[row, 4] = 0;
-                    sheet.Cells[row, 4].Interior.Color = 0xFFCC99;
+                    sheet.Cells[row, 4] = action.forced_dice;
+                    if (action.forced_dice == 0) {
+                        sheet.Cells[row, 4].Interior.Color = 0xFFCC99;
+                    } else {
+                        sheet.Cells[row, 4].Interior.Color = 0x0000FF;
+                        forced_count += 1;
+                    }
                     sheet.Cells[row, 5] = action.rpd;
                     sheet.Cells[row, 6].Formula = string.Concat("=D", row, "*E", row);
                     sheet.Cells[row, 6].Interior.Color = 0xB0B0B0;
@@ -136,14 +142,10 @@ namespace MNKHprocessor
                     sheet.Cells[top_row, 3].Formula = "=IF(B@>0,\"Free Dice\",\"\")".Replace("@", top_row.ToString());
                     sheet.Cells[top_row, 3].Interior.Color = 0xFFCC99;
                 }
-                sheet.Cells[top_row, 4].Formula = string.Concat("=SUM(D", top_row + 1, ":D", row, ")");
+                sheet.Cells[top_row, 4].Formula = string.Concat("=SUM(D", top_row + forced_count + 1, ":D", row, ")");
                 sheet.Cells[top_row, 4].Font.Bold = true;
                 sheet.Cells[top_row, 4].Interior.Color = 0xFFCC99;
                 sheet.Cells[top_row, 6].Formula = string.Concat("=SUM(F", top_row + 1, ":F", row, ")");
-                //TEMPORARY MALUS (NOT AUTO-FOUND)
-                //if (section.name.ToLower().Contains("infra")) {
-                //    sheet.Cells[top_row, 6].Formula = string.Concat("=SUM(F", top_row + 1, ":F", row, ")+10*MAX(0,D",top_row,"-8)");
-                //}
                 sheet.Cells[top_row, 6].Font.Bold = true;
                 sheet.Cells[top_row, 6].Interior.Color = 0xB0B0B0;
                 copyable_sheet.Cells[top_row, 1].Formula = string.Concat(

@@ -15,6 +15,7 @@ namespace MNKHprocessor
         public int prog_curr, prog_max;
         public int bonus;
         public ACTION_TYPES type;
+        public int forced_dice = 0;
         public Dictionary<string, int> indicators;
         public int position;
         public string section_name;
@@ -142,6 +143,7 @@ namespace MNKHprocessor
                 Regex isActionProg = new Regex(@"\[\](.*?):.*?\((\d+) Resources per Dice (\d+)/(\d+)\)", RegexOptions.IgnoreCase);
                 Regex isActionDC = new Regex(@"\[\](.*?):.*DC (\d+)", RegexOptions.IgnoreCase);
                 Regex isActionAny = new Regex(@"\[\](.*?):", RegexOptions.IgnoreCase);
+                Regex isActionForced = new Regex(@"(.*?):.*?(\d+) Dice", RegexOptions.IgnoreCase);
                 Regex checkMultiAction = new Regex(@"(\p{L}+)(/\p{L}+)+", RegexOptions.IgnoreCase);
                 Regex diceCount = new Regex(@"(\d+) Dice", RegexOptions.IgnoreCase);
                 Regex sectionModProgress = new Regex(@"(-?\d+)/Dice Malus", RegexOptions.IgnoreCase);
@@ -149,6 +151,7 @@ namespace MNKHprocessor
 
                 string tmp_indicator_list = string.Concat("(", String.Join("|", indicator_names), ")");
                 bool inPriceSection = false;
+                bool initialBureaucracy = false;
                 Regex priceModifier = new Regex(@"(-?\d+) RpD ([a-zA-Z ]+)", RegexOptions.IgnoreCase);
                 //language=regex
                 Regex indicatorCheckDirect = new Regex(@"\W(-?\d+)(\s?CI\d+)?\s" + tmp_indicator_list + @"(?! per)", RegexOptions.IgnoreCase);
@@ -172,12 +175,19 @@ namespace MNKHprocessor
                     }
                     Match m = isActionProg.Match(s);
                     ACTION_TYPES type = ACTION_TYPES.NORMAL;
+                    int forced_dice = 0;
                     if (!m.Success) {//Check for other types of actions than ones with "Resources per Dice"
                         m = isActionDC.Match(s);
                         if (m.Success) {
                             type = ACTION_TYPES.DC;
                         } else {
                             m = isActionAny.Match(s);
+                            if (!m.Success && initialBureaucracy) {
+                                m = isActionForced.Match(s);
+                                if (m.Success) {
+                                    forced_dice = Int32.Parse(m.Groups[2].Value);
+                                }
+                            }
                             if (s.Contains("Unrolled)")) {
                                 type = ACTION_TYPES.NOROLL;
                             } else {
@@ -208,10 +218,16 @@ namespace MNKHprocessor
                                 sections.Add(tmp);
                                 section_curr = sections.Count - 1;
                                 current_action_position = 0;
+                                if (section_name == "Bureaucracy") {
+                                    initialBureaucracy = true;
+                                }
                             }
                         }
                     } else {//Add action info into list
                             //setup the indicators
+                        if (forced_dice == 0) {
+                            initialBureaucracy = false;
+                        }
                         Dictionary<string, int> indicators = new();
                         MatchCollection indicatorsDirect = indicatorCheckDirect.Matches(s);
                         foreach (Match ind in indicatorsDirect) { //Indicators without half-values
@@ -230,6 +246,7 @@ namespace MNKHprocessor
                                 indicators = indicators,
                                 position = current_action_position++,
                                 section_name = sections[section_curr].name,
+                                forced_dice = forced_dice,
                             };
                             switch (type) {
                                 case ACTION_TYPES.REFORM:
@@ -254,6 +271,7 @@ namespace MNKHprocessor
                             sections[section_curr].actions.Add(new_action);
                         } else {
                             //break down a multi-action into separate action entries
+                            Debug.Assert(forced_dice == 0, "Forced dice incompatible with multi-actions");
                             List<string> subaction_names = new List<string>();
                             subaction_names.Add(multi_check.Groups[1].Value);
                             foreach (Capture cap in multi_check.Groups[2].Captures) {

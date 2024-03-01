@@ -178,7 +178,7 @@ namespace MNKHprocessor
                 }
             }
             //check that the plan used all dice
-            Debug.Assert(dice_raw.Count == 0);
+            Debug.Assert(dice_raw.Count == 0, "Plan must use all dice rolled");
             Console.WriteLine();
             Console.WriteLine("Total cost: " + total_cost + " R");
             Console.WriteLine("Indicator adjustments from actions (assuming no additional stages or other changes)");
