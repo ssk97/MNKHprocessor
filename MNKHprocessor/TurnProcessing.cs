@@ -15,7 +15,7 @@ namespace MNKHprocessor
         public int prog_curr, prog_max;
         public int bonus;
         public ACTION_TYPES type;
-        public int forced_dice = 0;
+        public int forced_dice;
         public Dictionary<string, int> indicators;
         public int position;
         public string section_name;
@@ -27,6 +27,7 @@ namespace MNKHprocessor
         public List<ActionData> actions;
         public string dice;
         public int section_modifier;
+        public int forced_count;
     }
     [DebuggerDisplay("{name}")]
     class TurnData
@@ -227,6 +228,8 @@ namespace MNKHprocessor
                             //setup the indicators
                         if (forced_dice == 0) {
                             initialBureaucracy = false;
+                        } else {
+                            sections[section_curr].forced_count += 1;
                         }
                         Dictionary<string, int> indicators = new();
                         MatchCollection indicatorsDirect = indicatorCheckDirect.Matches(s);

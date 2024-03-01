@@ -1,5 +1,5 @@
 ﻿Turn 81 (January 1st, 1970 - January 1st, 1971): A Spark of the Third Industrial Revolution
-Resources per Turn(RpY): Base 10000 -95 Rocketry -3920 Plan Commitments +160 Commitments Discount = 6240 with 0 in storage
+Resources per Turn(RpY): Base 10000 -95 Rocketry -3920 Plan Commitments +160 Commitments Discount = 6145 with 0 in storage
 
 
 Algerian War:
@@ -158,7 +158,7 @@ Crackdown on Misallocation: Excessive allocation of resources to management posi
 
 Commission on the Criminal Code: The criminal code that was adopted in the 30s has been functional for decades but a new commission has been formed to evaluate perceived excesses. Several members of the Supreme Soviet have pushed for a more general re-evaluation than has been warranted with Romanov failing to fight it, instead letting it pass in the prevote. The current debate is less on replacing the laws if they were just and what should be fixed as at least that compromise has been forced by more conservative elements. Some changes are almost certainly expected but a full overturn is deeply unlikely. (1 Dice) (Supreme Soviet)
 
-Dedicate Focus Towards a Project(Plastic Industries): (1 Dice) (+15 per Dice) (Balakirev)
+Dedicate Focus Towards a Project(Plastic Industries): (1 Dice) (+15 per Dice) (Balakirev) (Unrolled)
 
 State Union Reform: In a move to push his interests Seymonov has asked that the ministry back radical changes to the state union system. Decentralizing its administration to the level of regional level industries and providing each regional industry council far more administrative capacity. The law further calls for defining what actions workers can take independent of production, with Seymonov effectively wanting to provide protections for contract strikes along with allowing them to be called locally. As such strikes can only be caused by a failure in management there are good odds of the provision itself passing if for nothing more than to eliminate redundant and inaccurate procedures. (1 Dice) (Favor from Seymonov)
 
