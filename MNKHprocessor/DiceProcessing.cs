@@ -14,46 +14,6 @@ namespace MNKHprocessor
 
         static string plan_in = "text/plan.txt";
         static string dice_in = "text/dice.txt";
-        //https://en.wikipedia.org/wiki/Longest_common_subsequence_problem
-        static int LcsLength(string a, string b) {
-            int[,] C = new int[a.Length + 1, b.Length + 1]; // (a, b).Length + 1
-            for (int i = 0; i < a.Length; i++)
-                C[i, 0] = 0;
-            for (int j = 0; j < b.Length; j++)
-                C[0, j] = 0;
-            for (int i = 1; i <= a.Length; i++)
-                for (int j = 1; j <= b.Length; j++) {
-                    if (a[i - 1] == b[j - 1])//i-1,j-1
-                        C[i, j] = C[i - 1, j - 1] + 1;
-                    else
-                        C[i, j] = Math.Max(C[i, j - 1], C[i - 1, j]);
-                }
-            return C[a.Length, b.Length];
-        }
-        static ActionData FindAction(string action_name, List<SectionData> sections) {
-            string action_name_lower = action_name.ToLower();
-            ActionData action = null;
-            int best_closeness = 0;
-            bool have_conflict = true;
-            foreach (SectionData section in sections) {
-                foreach (ActionData evalAction in section.actions) {
-                    string name2 = evalAction.name;
-                    int closeness = LcsLength(name2.ToLower(), action_name_lower);
-                    if (closeness * 2 > Math.Min(name2.Length, action_name.Length)) {
-                        closeness = closeness * 10 - Math.Abs(name2.Length - action_name.Length);
-                        if (closeness == best_closeness) {
-                            have_conflict = true;
-                        } else if (closeness > best_closeness) {
-                            have_conflict = false;
-                            action = evalAction;
-                            best_closeness = closeness;
-                        }
-                    }
-                }
-            }
-            Debug.Assert(!have_conflict);
-            return action;
-        }
         static string Colorize(string str, string col) {
             if (!COLORING || col == "") return str;
             return string.Concat("[COLOR=rgb(", col, ")]", str, "[/COLOR]");
@@ -87,7 +47,7 @@ namespace MNKHprocessor
                         Match m_focus = isFocusAction.Match(s);
                         if (m_focus.Success) {
                             string target_name = m_focus.Groups[1].Value;
-                            ActionData action = FindAction(target_name, turn.sections);
+                            ActionData action = TurnProcessor.FindAction(target_name, turn.sections);
                             if (action.section_name.Contains("Service")) {
                                 action.bonus += 15;
                             } else {
@@ -118,7 +78,7 @@ namespace MNKHprocessor
                     string dice_final = "";
                     string color = "";
                     StringBuilder crits = new StringBuilder();
-                    ActionData action = FindAction(action_plan_name, turn.sections);
+                    ActionData action = TurnProcessor.FindAction(action_plan_name, turn.sections);
                     string action_name = action.name;//Use cannonical name instead of the plan's
                     if (last_section != action.section_name) {
                         last_section = action.section_name;
