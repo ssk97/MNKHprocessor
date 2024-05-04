@@ -1,38 +1,39 @@
-[X]Plan Election Season (Ministerial Edition)
--[X]Infrastructure (10/9 dice) 800 Resources
---[X]Ural Regional Roads: 355/400, 1 die (80R) 81%
---[X]Central Asian High Capacity Roads: 114/500, 1 die (80R) 0%
---[X]Central Asian Regional Roads: 22/500, 7 dice (560R) 75%
---[X]Power Grid Expansions: 251/275, 1 die (80R) 100%
--[X]Heavy Industry (5/7 dice) 940 Resources
---[X]Bakchar Deposit Utilization(Stage 2/3): 116/200, 2 dice (300R) 91%
---[X]Sevastopol Technical Equipment Plants: 89/150, 1 die (280R) 60%
---[X]Novouralsk Truck Plant: 0/150, 2 dice (360 R) 42%
--[X]Rocketry (4/2 dice) 0 Resources
---[X]Replace Glushko: 1 Die
---[X]Light Launcher Programs, 1 die
---[X]Increased Commercialization: 1 Die
---[X]Intercosmos: 1 Die
--[X]Light and Chemical Industry (8/8 dice) 1170 Resources
---[X]Caspian Sea Petrochemical Extraction(Stage 2/2): 45/150, 2 dice (300R) 80%
---[X]Samotor Field Development(Stage 3/3): 37/125, 2 dice (240R) 89%
---[X]Light Home Appliance Plants: 0/150, 3 dice (390R) 89%
---[X]Domestic Lithographic Equipment: 0/125, 1 die (240R) 16%
--[X]Agriculture (7/6 dice) 620 Resources
---[X]Increasing Mechanization: 161/200, 1 die (100R) 82%
---[X]Water and Waste Grants: 0/100, 2 dice (220R) 83%
---[X]Topsoil Preservation Programs: 0/200, 4 dice (300R) 92%
--[X]Services (10/10 dice) 840 Resources
---[X]Expanded Childcare(Stage 4/6): 14/250, 6 dice (420R) 100%
---[X]Technical Training Programs: 0/200, 2 dice (180R) 19%
---[X]State Insurance Enterprises: 67/200, 2 dice (240R) 74%
--[X]Bureaucracy (8/8 dice) 0 Resources
---[X]Legal Enforcement, 1 die (SupSov)
---[X]Formalization of Hiring Practices, 1 die (SupSov)
---[X]Authorize Farmer-Programs, 1 die
---[X]Back Comprehensive Tax Reform, 1 die
---[X]Directly Campaign: 1 Dice
---[X]Reorganize a Department: (Agriculture) 1 Die
---[X]Reorganize a Department: (Heavy Industry) 1 Die
---[X]Dedicate Focus (Childcare), 1 die (unrolled)
--[X]Total Cost: 4370/4370 Resources, 51 dice rolled
+[X] Plan Supplying our Azeri Girlboss with Texan Drills, Soviet Greyhound and Quenching the Thirst of the Nation
+-[X]6385/6395 Resources (10 Reserve), 41 Dice Rolled
+-[X]Infrastructure (6/3 Dice, 800 R)
+--[X]Central Asian High Capacity Roads, 2 Dice (220 R), 65%/77%
+--[X]Water Distribution Systems(Stage 7/10), 2 Dice (280 R), 60%/72%
+--[X]Development of the Volga, 1 Dice (110 R), 99%/100%
+--[X]ESA, 1 Dice (190 R), 0%/0%
+-[X]Heavy Industry (11/10 Dice, 2735 R)
+--[X]Kursk Steel Mills(Stage 1/2), 3 Dice (630 R), 89%/94%
+--[X]Donets Coal Basin Mechanization, 1 Dice (185 R) 5%/20%
+--[X]Kansk-Achinsk Basin Exploitation(Stage 2/5), 1 Dice (160 R), 86%/100%
+--[X]Atomash(Stage 1/3), 2 Dice (620 R), 0%/0%
+--[X]Saratov Machine Building Plant, 2 Dice (620 R), 59%/71%
+--[X]Gorky Automotive Plant Modernization, 2 Dice (520 R), 35%/50%
+-[X]Rocketry (3/3 Dice, 0 R)
+--[X]Mars Sample Return, 1 Dice
+--[X]Mercury Exploration Program, 1 Dice
+--[X]CMEA Payloads, 1 Dice
+-[X]Light Industry (3/6 Dice, 420 R)
+--[X]Second Generation Furnishings, 2 Dice (260 R), 79%/87%
+--[X]Home Supplies Production, 1 Dice (160 R), 100%/100%
+-[X]Chemical Industry (8/11 Dice, 1560 R)
+--[X]Timan-Pechora Fields, 1 Dice (130 R), 75%/90%
+--[X]Plastic Industries(Stage 2/5), 3 Dice (630 R), 89%/94%
+--[X]Expanded Ammonia Plants, 2 Dice (420 R), 59%/72%
+--[X]Synthetic Rubber Plants(Stage 2/4), 2 Dice (380 R), 100%/100%
+-[X]Agriculture (4/4 Dice, 480 R)
+--[X]Farmers Markets, 2 Dice (220 R), 59%/72%
+--[X]Water Management Programs, 2 Dice (260 R), 0%/0%
+-[X]Services (3/3 Dice, 390 R)
+--[X]Expanded Childcare(Stage 6/6), 1 Dice (90 R), 52%/67%
+--[X]Localized Transport Services, 2 Dice (300 R), 31%/44%
+-[X]Bureaucracy (6/3+3 Forced Dice, 0 R)
+--[X]Prison Reform Program, 1 Dice
+--[X]Increasing Domestic Innovation, 1 Dice
+--[X]Domestic Production Program, 1 Dice
+--[X]Force a Euro Vote, 1 Dice
+--[X]Scientific Exchange Programs, 1 Dice
+--[X]Reorganize a Department(Light Industry), 1 Dice

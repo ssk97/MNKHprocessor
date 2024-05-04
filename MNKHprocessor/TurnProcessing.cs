@@ -164,10 +164,12 @@ namespace MNKHprocessor
                             int modifier = Int32.Parse(rpdMod.Groups[1].Value);
                             string category = rpdMod.Groups[2].Value;
                             foreach (var sect in sections) {
-                                if (sect.name == category || category == "Universally") {
+                                if (sect.name == category || category.Contains("Universal")) {
                                     foreach (var act in sect.actions) {
-                                        act.rpd += modifier;
-                                        if (act.rpd < 0) { act.rpd = 0; }
+                                        if (act.type == ACTION_TYPES.NORMAL) {
+                                            act.rpd += modifier;
+                                            if (act.rpd < 0) { act.rpd = 0; }
+                                        }
                                     }
                                 }
                             }

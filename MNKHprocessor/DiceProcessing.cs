@@ -181,7 +181,7 @@ namespace MNKHprocessor
             Debug.Assert(dice_raw.Count == 0, "Plan must use all dice rolled");
             Console.WriteLine();
             Console.WriteLine("Total cost: " + total_cost + " R");
-            Console.WriteLine("Indicator adjustments from actions (assuming no additional stages or other changes)");
+            Console.WriteLine("Indicator adjustments from actions (assuming no additional stages or other changes, and omakes applied to all possible)");
             foreach (string ind_name in TurnProcessor.indicator_names) {
                 Console.WriteLine(ind_name + ": " + indicators.GetValueOrDefault(ind_name, 0));
             }
