@@ -1,39 +1,39 @@
-[X] Plan Supplying our Azeri Girlboss with Texan Drills, Soviet Greyhound and Quenching the Thirst of the Nation
--[X]6385/6395 Resources (10 Reserve), 41 Dice Rolled
--[X]Infrastructure (6/3 Dice, 800 R)
---[X]Central Asian High Capacity Roads, 2 Dice (220 R), 65%/77%
---[X]Water Distribution Systems(Stage 7/10), 2 Dice (280 R), 60%/72%
---[X]Development of the Volga, 1 Dice (110 R), 99%/100%
---[X]ESA, 1 Dice (190 R), 0%/0%
--[X]Heavy Industry (11/10 Dice, 2735 R)
---[X]Kursk Steel Mills(Stage 1/2), 3 Dice (630 R), 89%/94%
---[X]Donets Coal Basin Mechanization, 1 Dice (185 R) 5%/20%
---[X]Kansk-Achinsk Basin Exploitation(Stage 2/5), 1 Dice (160 R), 86%/100%
---[X]Atomash(Stage 1/3), 2 Dice (620 R), 0%/0%
---[X]Saratov Machine Building Plant, 2 Dice (620 R), 59%/71%
---[X]Gorky Automotive Plant Modernization, 2 Dice (520 R), 35%/50%
+[X]Plan Stopping Soviet Stagflation with Smart Salary Schemes
+-[X]Twisted Ribbon Design
+-[X]6900/6940 Resources (40 Reserve), 45 Dice Rolled
+-[X]Infrastructure (5/3 Dice, 750 R)
+--[X]Western Passenger Rail Expansion, 1 Dice (150 R), 0%/0%
+--[X]Civilian Airports(Stage 3/5), 2 Dice (220 R), 97%/99%
+--[X]ESA, 2 Dice (380 R), 48%/62%
+-[X]Heavy Industry (10/10 Dice, 2400 R)
+--[X]Kursk Steel Mills(Stage 2/2), 2 Dice (420 R), 85%/92%
+--[X]Kansk-Achinsk Basin Exploitation(Stage 3/5), 3 Dice (480 R), 99%/100%
+--[X]Atomash(Stage 1/3), 3 Dice (930 R), 65%/75%
+--[X]Saratov Machine Building Plant, 1 Dice (310 R), 79%/94%
+--[X]Gorky Automotive Plant Modernization, 1 Dice (260 R), 100%/100%
 -[X]Rocketry (3/3 Dice, 0 R)
---[X]Mars Sample Return, 1 Dice
---[X]Mercury Exploration Program, 1 Dice
---[X]CMEA Payloads, 1 Dice
--[X]Light Industry (3/6 Dice, 420 R)
---[X]Second Generation Furnishings, 2 Dice (260 R), 79%/87%
---[X]Home Supplies Production, 1 Dice (160 R), 100%/100%
--[X]Chemical Industry (8/11 Dice, 1560 R)
---[X]Timan-Pechora Fields, 1 Dice (130 R), 75%/90%
---[X]Plastic Industries(Stage 2/5), 3 Dice (630 R), 89%/94%
---[X]Expanded Ammonia Plants, 2 Dice (420 R), 59%/72%
---[X]Synthetic Rubber Plants(Stage 2/4), 2 Dice (380 R), 100%/100%
--[X]Agriculture (4/4 Dice, 480 R)
---[X]Farmers Markets, 2 Dice (220 R), 59%/72%
---[X]Water Management Programs, 2 Dice (260 R), 0%/0%
--[X]Services (3/3 Dice, 390 R)
---[X]Expanded Childcare(Stage 6/6), 1 Dice (90 R), 52%/67%
---[X]Localized Transport Services, 2 Dice (300 R), 31%/44%
+--[X]Inflatable Section Experiments, 1 Dice
+--[X]Station Program, 1 Dice
+--[X]RLA Block Modernization, 1 Dice
+-[X]Light Industry (7/6 Dice, 1080 R)
+--[X]Mixed Textile Industries(Stage 1/3), 3 Dice (480 R), 96%/98%
+--[X]Engineered Wood Production, 3 Dice (390 R), 89%/94%
+--[X]Second Generation Calculators, 1 Dice (210 R), 30%/45%
+-[X]Chemical Industry (9/11 Dice, 1690 R)
+--[X]Gas Infrastructure, 2 Dice (260 R), 59%/72%
+--[X]West Siberian Petroleum Fields(Stage 2/6), 1 Dice (130 R), 80%/95%
+--[X]Plastic Industries(Stage 3/5), 2 Dice (420 R), 79%/88%
+--[X]Pharmaceutical Industry Modernization, 2 Dice (500 R), 63%/75%
+--[X]Stabilization of Agrochemicals(Stage 1/2), 2 Dice (380 R), 59%/72%
+-[X]Agriculture (2/4 Dice, 260 R)
+--[X]Water Management Programs, 2 Dice (260 R), 32%/45%
+-[X]Services (4/3 Dice, 720 R)
+--[X]Transportation Enterprises(Stage 3/5), 3 Dice (570 R), 93%/97%
+--[X]Localized Transport Services, 1 Dice (150 R), 79%/94%
 -[X]Bureaucracy (6/3+3 Forced Dice, 0 R)
---[X]Prison Reform Program, 1 Dice
---[X]Increasing Domestic Innovation, 1 Dice
---[X]Domestic Production Program, 1 Dice
---[X]Force a Euro Vote, 1 Dice
---[X]Scientific Exchange Programs, 1 Dice
---[X]Reorganize a Department(Light Industry), 1 Dice
+--[X]Pension Modernization, 1 Dice
+--[X]Restructuring of the Passport System, 1 Dice
+--[X]Dedicate Focus Towards a Project(Pharmaceutical Industry Modernization), 1 Dice
+--[X]Fuel Oil Reduction Plans, 1 Dice
+--[X]Minimal Ecological Standards, 1 Dice
+--[X]Educational Attainment Reforms, 1 Dice
