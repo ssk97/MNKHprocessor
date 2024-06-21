@@ -115,8 +115,10 @@ namespace MNKHprocessor
                     sheet.Cells[row, 5] = action.rpd;
                     sheet.Cells[row, 6].Formula = string.Concat("=D", row, "*E", row);
                     sheet.Cells[row, 6].Interior.Color = 0xB0B0B0;
-                    if (action.type == ACTION_TYPES.NORMAL || action.type == ACTION_TYPES.DC) {
+                    if (action.bonus != 0) {
                         sheet.Cells[row, 7] = action.bonus;
+                    }
+                    if (action.type == ACTION_TYPES.NORMAL || action.type == ACTION_TYPES.DC) {
                         sheet.Cells[row, 8].Formula = "=IF(D@<=0,\"\",B@+D@*(50.5+G@))".Replace("@", row.ToString());
                         sheet.Cells[row, 13].Formula = "=IF(D@<=0,\"\",C@-B@-(D@*G@))".Replace("@", row.ToString());
                         sheet.Cells[row, 9].Formula = "=IF(D@<=0,\"\",IF(M@<D@,1,IF(M@>D@*100,0,OFFSET(Prob_Table!A1,M@,D@))))".Replace("@", row.ToString());

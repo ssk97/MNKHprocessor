@@ -44,21 +44,18 @@ namespace MNKHprocessor
         public static string[] section_names = new string[] { "Infrastructure", "Heavy Industry", "Rocketry", "Light Industry", "Chemical Industry", "Agriculture", "Services", "Bureaucracy", "Ministry Actions" };
         public static string[] indicator_names = new string[] { "General Labor", "Educated Labor", "Electricity", "Steel", "Coal", "Non-Ferrous", "Petroleum Fuels", "Petrochemicals" };
         public static string[] indicator_short_names = new string[] { "GL", "EL", "E", "S", "C", "NF", "PF", "P" };
-        static int get_global_bonus() { //Affects reform rolls too
-            return 0; //Management XP
+        static int get_bureaucracy_bonus() { //Affects reform rolls too
+            return -10; //Inexperienced Politician
         }
         static int get_bonus(string name, SectionData section) {
             int bonus = 0;
-            bonus += 10; //MNKh education
-            bonus += 9; //Economics Education
+            bonus += 10; //MNKh XP
+            bonus += 9; //Econ education
             bonus += 5; //Stat Planning
             bonus += 5; //Telecomms
+            bonus += 10; //Excellent Administrator
 
-            bonus += get_global_bonus();
-            if (section.name == "Infrastructure") {
-                bonus += 5;
-            }
-            if (section.name == "Services") {
+            if (section.name == "Chemical Industry") {
                 bonus += 10;
             }
             bonus += section.section_modifier;
@@ -258,7 +255,7 @@ namespace MNKHprocessor
                                     new_action.rpd = 0;
                                     new_action.prog_curr = 0;
                                     new_action.prog_max = 0;
-                                    new_action.bonus = get_global_bonus();
+                                    new_action.bonus = get_bureaucracy_bonus();
                                     break;
                                 case ACTION_TYPES.DC:
                                     new_action.rpd = 0;
