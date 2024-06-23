@@ -1,39 +1,36 @@
-[X]Plan Stopping Soviet Stagflation with Smart Salary Schemes
--[X]Twisted Ribbon Design
--[X]6900/6940 Resources (40 Reserve), 45 Dice Rolled
--[X]Infrastructure (5/3 Dice, 750 R)
---[X]Western Passenger Rail Expansion, 1 Dice (150 R), 0%/0%
---[X]Civilian Airports(Stage 3/5), 2 Dice (220 R), 97%/99%
---[X]ESA, 2 Dice (380 R), 48%/62%
--[X]Heavy Industry (10/10 Dice, 2400 R)
---[X]Kursk Steel Mills(Stage 2/2), 2 Dice (420 R), 85%/92%
---[X]Kansk-Achinsk Basin Exploitation(Stage 3/5), 3 Dice (480 R), 99%/100%
---[X]Atomash(Stage 1/3), 3 Dice (930 R), 65%/75%
---[X]Saratov Machine Building Plant, 1 Dice (310 R), 79%/94%
---[X]Gorky Automotive Plant Modernization, 1 Dice (260 R), 100%/100%
--[X]Rocketry (3/3 Dice, 0 R)
---[X]Inflatable Section Experiments, 1 Dice
---[X]Station Program, 1 Dice
---[X]RLA Block Modernization, 1 Dice
--[X]Light Industry (7/6 Dice, 1080 R)
---[X]Mixed Textile Industries(Stage 1/3), 3 Dice (480 R), 96%/98%
---[X]Engineered Wood Production, 3 Dice (390 R), 89%/94%
---[X]Second Generation Calculators, 1 Dice (210 R), 30%/45%
--[X]Chemical Industry (9/11 Dice, 1690 R)
---[X]Gas Infrastructure, 2 Dice (260 R), 59%/72%
---[X]West Siberian Petroleum Fields(Stage 2/6), 1 Dice (130 R), 80%/95%
---[X]Plastic Industries(Stage 3/5), 2 Dice (420 R), 79%/88%
---[X]Pharmaceutical Industry Modernization, 2 Dice (500 R), 63%/75%
---[X]Stabilization of Agrochemicals(Stage 1/2), 2 Dice (380 R), 59%/72%
--[X]Agriculture (2/4 Dice, 260 R)
---[X]Water Management Programs, 2 Dice (260 R), 32%/45%
--[X]Services (4/3 Dice, 720 R)
---[X]Transportation Enterprises(Stage 3/5), 3 Dice (570 R), 93%/97%
---[X]Localized Transport Services, 1 Dice (150 R), 79%/94%
--[X]Bureaucracy (6/3+3 Forced Dice, 0 R)
---[X]Pension Modernization, 1 Dice
---[X]Restructuring of the Passport System, 1 Dice
---[X]Dedicate Focus Towards a Project(Pharmaceutical Industry Modernization), 1 Dice
---[X]Fuel Oil Reduction Plans, 1 Dice
---[X]Minimal Ecological Standards, 1 Dice
---[X]Educational Attainment Reforms, 1 Dice
+[X] Plan Redline Machinery
+-[X]7350/7370 Resources (20 Reserve), 48 Dice Rolled
+-[X]Infrastructure (6/4 Dice, 725 R)
+--[X]Western Passenger Rail Expansion, 1 Dice (150 R), 100%/100%
+--[X]Far Eastern High Capacity Corridor, 2 Dice (230 R), 54%/68%
+--[X]Civilian Airports(Stage 4/5), 3 Dice (345 R), 96%/98%
+-[X]Heavy Industry (9/10 Dice, 2245 R)
+--[X]Kuzbas Deposit Exploitation(Stage 4/5), 2 Dice (260 R), 38%/52%
+--[X]Atomash(Stage 2/3), 2 Dice (620 R), 99%/100%
+--[X]Kiev Machine Building Plant, 3 Dice (870 R), 64%/74%
+--[X]Second Generation Lithography, 1 Dice (285 R), 40%/55%
+--[X]Baltic Sea Shipyards, 1 Dice (210 R), 0%/0%
+-[X]Rocketry (2/2 Dice, 0 R)
+--[X]Expand Intercosmos:1 dice
+--[X]Formalize Peaceful Competition, 1 Dice
+-[X]Light Industry (5/6 Dice, 930 R)
+--[X]Light Home Appliance Plants, 2 Dice (340 R), 75%/85%
+--[X]Color Television Modernization, 2 Dice (380 R), 32%/45%
+--[X]Second Generation Calculators, 1 Dice (210 R), 100%/100%
+-[X]Chemical Industry (11/11 Dice, 2170 R)
+--[X]West Siberian Petroleum Fields(Stage 3/6), 4 Dice (640 R), 100%/100%
+--[X]Volga-Ural Petroleum Modernization, 1 Dice (190 R), 0%/0%
+--[X]Power Plants(CCGT), 3 Dice (750 R), Phase 1 (100%), Phase 2 80%/87%
+--[X]Stabilization of Agrochemicals, 1 Dice (210 R), 57%/72%
+--[X]Synthetic Rubber Plants(Stage 4/4), 2 Dice (380 R), 88%/94%
+-[X]Agriculture (3/4 Dice, 390 R)
+--[X]Domestic Meat Programs(Stage 4/10), 3 Dice (390 R), 95%/97%
+-[X]Services (5/3 Dice, 890 R)
+--[X]Transportation Enterprises(Stage 4/5), 3 Dice (570 R), 95%/98%
+--[X]Town-Market Construction, 2 Dice (320 R), 98%/100%
+-[X]Bureaucracy (8/8 Dice, 0 R)
+--[X]Dedicate Focus Towards a Project(CCGT Power Plants), 1 Dice
+--[X]Drive Through Euro Adoption: (1 Dice)
+--[X]Assess the Supreme Soviet: (1 Dice)
+--[X]Reach Out to Podgorny, 3 Dice
+--[X]Reconnect with the Technocrats, 2 Dice

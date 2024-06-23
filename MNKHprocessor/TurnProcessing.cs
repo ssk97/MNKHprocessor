@@ -42,10 +42,13 @@ namespace MNKHprocessor
     {
         static string turn_in = "text/turnPost.txt";
         public static string[] section_names = new string[] { "Infrastructure", "Heavy Industry", "Rocketry", "Light Industry", "Chemical Industry", "Agriculture", "Services", "Bureaucracy", "Ministry Actions" };
-        public static string[] indicator_names = new string[] { "General Labor", "Educated Labor", "Electricity", "Steel", "Coal", "Non-Ferrous", "Petroleum Fuels", "Petrochemicals" };
-        public static string[] indicator_short_names = new string[] { "GL", "EL", "E", "S", "C", "NF", "PF", "P" };
-        static int get_bureaucracy_bonus() { //Affects reform rolls too
-            return -10; //Inexperienced Politician
+        public static string[] indicator_names = new string[] { "General Labor", "Educated Labor", "Electricity", "Steel", "Coal", "Non-Ferrous", "Petroleum Fuels", "Petroleum Gas", "Petrochemicals" };
+        public static string[] indicator_short_names = new string[] { "GL", "EL", "E", "S", "C", "NF", "PF", "PG", "P" };
+        static int get_reform_bonus(string name, SectionData section) { //Affects reform rolls too
+            if (section.name == "Bureaucracy") {
+                return -10; //Inexperienced Politician
+            }
+            return 0;
         }
         static int get_bonus(string name, SectionData section) {
             int bonus = 0;
@@ -255,7 +258,7 @@ namespace MNKHprocessor
                                     new_action.rpd = 0;
                                     new_action.prog_curr = 0;
                                     new_action.prog_max = 0;
-                                    new_action.bonus = get_bureaucracy_bonus();
+                                    new_action.bonus = get_reform_bonus(new_action.name, sections[section_curr]);
                                     break;
                                 case ACTION_TYPES.DC:
                                     new_action.rpd = 0;
