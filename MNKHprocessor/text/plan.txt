@@ -1,36 +1,40 @@
-[X] Plan Redline Machinery
--[X]7350/7370 Resources (20 Reserve), 48 Dice Rolled
--[X]Infrastructure (6/4 Dice, 725 R)
---[X]Western Passenger Rail Expansion, 1 Dice (150 R), 100%/100%
---[X]Far Eastern High Capacity Corridor, 2 Dice (230 R), 54%/68%
---[X]Civilian Airports(Stage 4/5), 3 Dice (345 R), 96%/98%
--[X]Heavy Industry (9/10 Dice, 2245 R)
---[X]Kuzbas Deposit Exploitation(Stage 4/5), 2 Dice (260 R), 38%/52%
---[X]Atomash(Stage 2/3), 2 Dice (620 R), 99%/100%
---[X]Kiev Machine Building Plant, 3 Dice (870 R), 64%/74%
---[X]Second Generation Lithography, 1 Dice (285 R), 40%/55%
---[X]Baltic Sea Shipyards, 1 Dice (210 R), 0%/0%
--[X]Rocketry (2/2 Dice, 0 R)
---[X]Expand Intercosmos:1 dice
---[X]Formalize Peaceful Competition, 1 Dice
--[X]Light Industry (5/6 Dice, 930 R)
---[X]Light Home Appliance Plants, 2 Dice (340 R), 75%/85%
---[X]Color Television Modernization, 2 Dice (380 R), 32%/45%
---[X]Second Generation Calculators, 1 Dice (210 R), 100%/100%
--[X]Chemical Industry (11/11 Dice, 2170 R)
---[X]West Siberian Petroleum Fields(Stage 3/6), 4 Dice (640 R), 100%/100%
---[X]Volga-Ural Petroleum Modernization, 1 Dice (190 R), 0%/0%
---[X]Power Plants(CCGT), 3 Dice (750 R), Phase 1 (100%), Phase 2 80%/87%
---[X]Stabilization of Agrochemicals, 1 Dice (210 R), 57%/72%
---[X]Synthetic Rubber Plants(Stage 4/4), 2 Dice (380 R), 88%/94%
--[X]Agriculture (3/4 Dice, 390 R)
---[X]Domestic Meat Programs(Stage 4/10), 3 Dice (390 R), 95%/97%
--[X]Services (5/3 Dice, 890 R)
---[X]Transportation Enterprises(Stage 4/5), 3 Dice (570 R), 95%/98%
---[X]Town-Market Construction, 2 Dice (320 R), 98%/100%
--[X]Bureaucracy (8/8 Dice, 0 R)
---[X]Dedicate Focus Towards a Project(CCGT Power Plants), 1 Dice
---[X]Drive Through Euro Adoption: (1 Dice)
---[X]Assess the Supreme Soviet: (1 Dice)
---[X]Reach Out to Podgorny, 3 Dice
---[X]Reconnect with the Technocrats, 2 Dice
+[X]Plan Campaign Seasoning
+-[X]8125/8155 Resources (30 Reserve), 54 Dice Rolled
+-[X]Infrastructure (7/4 Dice, 1325 R)
+--[X]Civilian Airports(Stage 5/5), 1 Dice (115 R), 36%/51%
+--[x]CMEA LNG Pipelines, 2 Dice (330 R), 75%/85%
+--[X]Cargo Rail Modernization Program, 2 Dice (300 R), 75%/85%
+--[x]Academic Network, 2 Dice (580 R), 75%/85%
+-[X]Heavy Industry (9/10 Dice, 2140 R)
+--[X]Kuzbas Deposit Exploitation(Stage 4/5), 2 Dice (260 R), 100%/100%
+--[X]Atomash(Stage 3/3), 2 Dice (620 R), 100%/100%
+--[x]Baltic Sea Shipyards, 2 Dice (420 R), 94%/98%
+--[x]Expanded Semiconductor Production, 2 Dice (580 R), 98%/100%
+--[X]Volga Automotive Plant Modernization, 1 Dice (260 R), 0%/0%
+-[X]Rocketry (3/3 Dice, 0 R)
+--[x]Orbital Telescope Program, 1 Dice
+--[x]Expand Interplanetary Missions, 1 Dice
+--[x]Positioning System Programs, 1 Dice
+-[X]Light Industry (6/6 Dice, 940 R)
+--[X]Air Conditioner Plants(Stage 6/8), 3 Dice (450 R), 83%/90%
+--[X]Mixed Textile Industries(Stage 2/3), 1 Dice (160 R), 18%/33%
+--[x]Expanded Paper Industries, 1 Dice (170 R), 40%/55%
+--[x]Expanded Furniture Industries, 1 Dice (160 R), 40%/55%
+-[X]Chemical Industry (11/11 Dice, 2420 R)
+--[X]West Siberian Petroleum Fields(Stage 5/6), 1 Dice (160 R), 100%/100%
+--[x]Volga-Ural Petroleum Modernization, 2 Dice (380 R), 95%/99%
+--[x]Plastic Industries(Stage 4/5), 3 Dice (630 R), 88%/93%
+--[X]Intensive Cracking Infrastructure(Stage 1/2), 2 Dice (500 R), 87%/94%
+--[x]Power Plants(CCGT), 3 Dice (750 R), 100%/100%
+-[X]Agriculture (6/4 Dice, 780 R)
+--[x]Domestic Meat Programs(Stage 5/10), 1 Dice (130 R), 83%/98%
+--[X]Local Meat Production Grants, 2 Dice (320 R), 75%/85%
+--[x]Vegetable Production Modernization, 3 Dice (330 R), 64%/74%
+-[X]Services (4/3 Dice, 520 R)
+--[X]Development of Population Services(Stage 1/3), 4 Dice (520 R), 97%/99%
+-[x]Bureaucracy (8/8 Dice, 0 R)
+--[x]Shift Refrigerants, 1 Dice
+--[X]Agricultural Land Reassessment, 1 Dice
+--[x]Expand Town Classification Codes, 1 Dice
+--[x]Clarify the River Reversal, 1 Dice
+--[X]Campaign, 4 Dice
