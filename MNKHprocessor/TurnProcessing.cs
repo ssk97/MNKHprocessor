@@ -46,14 +46,14 @@ namespace MNKHprocessor
         public static string[] indicator_short_names = new string[] { "GL", "EL", "E", "S", "C", "NF", "PF", "PG", "P" };
         static int get_reform_bonus(string name, SectionData section) { //Affects reform rolls too
             if (section.name == "Bureaucracy") {
-                return -8; //Inexperienced Politician
+                return 6; //Inexperienced Politician -4, Decisive +10
             }
             return 0;
         }
         static int get_bonus(string name, SectionData section) {
             int bonus = 0;
             bonus += 10; //MNKh XP
-            bonus += 9; //Econ education
+            bonus += 10; //Econ education
             bonus += 5; //Stat Planning
             bonus += 5; //Telecomms
             bonus += 10; //Excellent Administrator
@@ -144,7 +144,7 @@ namespace MNKHprocessor
                 Regex isActionProg = new Regex(@"\[\](.*?):.*?\((\d+) Resources per Dice (\d+)/(\d+)\)", RegexOptions.IgnoreCase);
                 Regex isActionDC = new Regex(@"\[\](.*?):.*DC (\d+)", RegexOptions.IgnoreCase);
                 Regex isActionAny = new Regex(@"\[\](.*?):", RegexOptions.IgnoreCase);
-                Regex isActionForced = new Regex(@"(.*?):.*?(\d+) Dice", RegexOptions.IgnoreCase);
+                Regex isActionForced = new Regex(@"\[X\](.*?):.*?(\d+) Dice", RegexOptions.IgnoreCase);
                 Regex checkMultiAction = new Regex(@"(\p{L}+)(/\p{L}+)+", RegexOptions.IgnoreCase);
                 Regex diceCount = new Regex(@"(\d+) Dice", RegexOptions.IgnoreCase);
                 Regex sectionModProgress = new Regex(@"(-?\d+)/Dice Malus", RegexOptions.IgnoreCase);
@@ -152,7 +152,6 @@ namespace MNKHprocessor
 
                 string tmp_indicator_list = string.Concat("(", String.Join("|", indicator_names), ")");
                 bool inPriceSection = false;
-                bool initialBureaucracy = false;
                 Regex priceModifier = new Regex(@"(-?\d+) RpD ([a-zA-Z ]+)", RegexOptions.IgnoreCase);
                 //language=regex
                 Regex indicatorCheckDirect = new Regex(@"\W(-?\d+)(\s?CI\d+)?\s" + tmp_indicator_list + @"(?! per)", RegexOptions.IgnoreCase);
@@ -185,7 +184,7 @@ namespace MNKHprocessor
                             type = ACTION_TYPES.DC;
                         } else {
                             m = isActionAny.Match(s);
-                            if (!m.Success && initialBureaucracy) {
+                            if (!m.Success) {
                                 m = isActionForced.Match(s);
                                 if (m.Success) {
                                     forced_dice = Int32.Parse(m.Groups[2].Value);
@@ -221,18 +220,11 @@ namespace MNKHprocessor
                                 sections.Add(tmp);
                                 section_curr = sections.Count - 1;
                                 current_action_position = 0;
-                                if (section_name == "Bureaucracy") {
-                                    initialBureaucracy = true;
-                                }
                             }
                         }
                     } else {//Add action info into list
                             //setup the indicators
-                        if (forced_dice == 0) {
-                            initialBureaucracy = false;
-                        } else {
-                            sections[section_curr].forced_count += 1;
-                        }
+                        sections[section_curr].forced_count += forced_dice;
                         Dictionary<string, int> indicators = new();
                         MatchCollection indicatorsDirect = indicatorCheckDirect.Matches(s);
                         foreach (Match ind in indicatorsDirect) { //Indicators without half-values

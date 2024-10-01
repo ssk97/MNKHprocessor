@@ -87,7 +87,7 @@ namespace MNKHprocessor
                 if (section.forced_count == 0) {
                     section_dice_str = section.dice;
                 } else {
-                    section_dice_str = string.Concat(section.dice, "+", section.forced_count, " Forced");
+                    section_dice_str = string.Concat(section.dice, "(", section.forced_count, " Forced)");
                 }
                 sheet.Cells[top_row, 1] = string.Concat(section.name, " (", section_dice_str, ")");
                 sheet.Cells[top_row, 1].Font.Bold = true;
@@ -142,7 +142,7 @@ namespace MNKHprocessor
                     }
                 }
                 if (Int32.TryParse(section.dice, out int diceInt)) {
-                    sheet.Cells[top_row, 2].Formula = string.Concat("=MAX(0,D", top_row, "-", diceInt+section.forced_count, ")");
+                    sheet.Cells[top_row, 2].Formula = string.Concat("=MAX(0,D", top_row, "-", diceInt, ")");
                     sheet.Cells[top_row, 2].NumberFormat = "0; -0; ;@";
                     sheet.Cells[top_row, 2].Interior.Color = 0xFFCC99;
                     sheet.Cells[top_row, 3].Formula = "=IF(B@>0,\"Free Dice\",\"\")".Replace("@", top_row.ToString());
