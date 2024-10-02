@@ -1,10 +1,10 @@
-Blackstar threw 12 100-faced dice. Reason: Dice Total: 795
-95 49 70 61 54 77 41 87 53 36 91 81
-Blackstar threw 12 100-faced dice. Reason: Dice Total: 599
-81 15 59 33 29 64 44 87 55 93 34 5
-Blackstar threw 12 100-faced dice. Reason: Dice Total: 508
-50 85 71 36 100 21 6 17 38 25 21 38
-Blackstar threw 12 100-faced dice. Reason: Dice Total: 763
-80 94 35 80 47 33 47 90 55 91 81 30
-Blackstar threw 6 100-faced dice. Reason: Dice Total: 241
-78 3 35 67 21 37
+
+Rolling dice
+Blackstar threw 12 100-faced dice. Reason: Dice Total: 474
+26 68 45 10 34 7 92 42 62 1 44 43
+Blackstar threw 12 100-faced dice. Reason: Dice Total: 826
+2 95 94 73 56 65 83 59 92 73 70 64
+Blackstar threw 12 100-faced dice. Reason: Dice Total: 589
+45 22 30 9 5 32 100 62 60 88 88 48
+Blackstar threw 12 100-faced dice. Reason: Dice Total: 674
+58 77 53 87 16 51 60 35 88 52 36 61

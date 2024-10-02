@@ -36,12 +36,11 @@ namespace MNKHprocessor
         public int turn;
         public int free_dice;
         public int max_resources;
-        public static int crit_max = 2;
     }
     class TurnProcessor
     {
         static string turn_in = "text/turnPost.txt";
-        public static string[] section_names = new string[] { "Infrastructure", "Heavy Industry", "Rocketry", "Light Industry", "Chemical Industry", "Agriculture", "Services", "Bureaucracy", "Ministry Actions" };
+        public static string[] section_names = new string[] { "Infrastructure", "Heavy Industry", "Rocketry", "Light Industry", "Chemical Industry", "Agriculture", "Services", "Bureaucracy"};
         public static string[] indicator_names = new string[] { "General Labor", "Educated Labor", "Electricity", "Steel", "Coal", "Non-Ferrous", "Petroleum Fuels", "Petroleum Gas", "Petrochemicals" };
         public static string[] indicator_short_names = new string[] { "GL", "EL", "E", "S", "C", "NF", "PF", "PG", "P" };
         static int get_reform_bonus(string name, SectionData section) { //Affects reform rolls too

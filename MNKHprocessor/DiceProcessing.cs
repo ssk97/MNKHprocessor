@@ -111,9 +111,12 @@ namespace MNKHprocessor
                                 int dice = dice_raw.Dequeue();
                                 total_sum += dice;
                                 str.Append('+').Append(dice.ToString());
-                                if (dice == 1) { crits.Append(Colorize(" (Nat 1)", "255,0,0")); }
-                                if (dice == 2) { crits.Append(Colorize(" (Nat 2)", "255,0,0")); }
-                                if (dice == 100) { crits.Append(Colorize(" (Nat 100)", "0,255,0")); }
+                                if (dice == 1 || (action.section_name == "Bureaucracy" && dice <= 3)) {
+                                    crits.Append(Colorize(" (Nat "+ dice.ToString()+")", "255,0,0"));
+                                }
+                                if (dice == 100 || (action.section_name == "Bureaucracy" && dice >= 99)) {
+                                    crits.Append(Colorize(" (Nat " + dice.ToString() + ")", "0,255,0"));
+                                }
                             }
                             if (total_sum < action.prog_max && prob2 >= 0.1) {
                                 color = "255,0,0";
@@ -163,8 +166,13 @@ namespace MNKHprocessor
                                 int dice = dice_raw.Dequeue();
                                 tmp_sum += dice;
                                 dice_formatted += "+" + dice.ToString();
-                                if (dice <= TurnData.crit_max) { crits.Append(Colorize(" (Nat " + dice + ")", "255,0,0")); }
-                                if (dice == 100) { crits.Append(Colorize(" (Nat 100)", "0,255,0")); }
+
+                                if (dice == 1 || (action.section_name == "Bureaucracy" && dice <= 3)) {
+                                    crits.Append(Colorize(" (Nat " + dice.ToString() + ")", "255,0,0"));
+                                }
+                                if (dice == 100 || (action.section_name == "Bureaucracy" && dice >= 99)) {
+                                    crits.Append(Colorize(" (Nat " + dice.ToString() + ")", "0,255,0"));
+                                }
                             }
                             dice_formatted += "=";
                             dice_final = tmp_sum.ToString();
