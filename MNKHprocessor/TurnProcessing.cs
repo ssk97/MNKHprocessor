@@ -45,7 +45,7 @@ namespace MNKHprocessor
         public static string[] indicator_short_names = new string[] { "GL", "EL", "E", "S", "C", "NF", "PF", "PG", "P" };
         static int get_reform_bonus(string name, SectionData section) { //Affects reform rolls too
             if (section.name == "Bureaucracy") {
-                return 6; //Inexperienced Politician -4, Decisive +10
+                return 8; //Inexperienced Politician -2, Decisive +10
             }
             return 0;
         }

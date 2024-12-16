@@ -48,12 +48,12 @@ namespace MNKHprocessor
                         if (m_focus.Success) {
                             string target_name = m_focus.Groups[1].Value;
                             ActionData action = TurnProcessor.FindAction(target_name, turn.sections);
-                            action.bonus += 15;
-                            /*if (action.section_name.Contains("Service")) {
+                            //action.bonus += 15;
+                            if (action.section_name.Contains("Chemical Industry")) {
                                 action.bonus += 15;
                             } else {
                                 action.bonus += 5;
-                            }*/
+                            }
                             continue;
                         }
                         planList.Add(s);
