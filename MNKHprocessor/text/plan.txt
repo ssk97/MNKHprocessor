@@ -1,42 +1,39 @@
-[X] Plan Demand for MFPG
--[X]6830/6835 Resources (5 Reserve), 41 Dice Rolled
--[X]Infrastructure (5/5 Dice, 850 R)
---[X]Western Local Roads(Stage 1/3), 1 Dice (140 R), 53%/68%
---[X]Urban Sewage Systems, 2 Dice (380 R), 0%/0%
---[X]HVDC Grid Islands, 2 Dice (330 R), 33%/47%
--[X]Heavy Industry (9/5 Dice, 2460 R)
---[X]Coal Power Plants(CPSC), 1 Dice (310 R), 41%/56%
---[X]Virgin Coalfield Exploitation, 1 Dice (160 R), 41%/56%
---[X]CNC Machine Building Plants, 2 Dice (620 R), 77%/86%
---[X]Vladivostok Shipyards, 1 Dice (250 R), 0%/0%
---[X]UMAZ Automotive Plant, 2 Dice (500 R), 65%/77%
---[X]Mass Commercialization of UAZ, 2 Dice (620 R), 83%/91%
--[X]Rocketry (1/2 Dice, 0 R)
---[X]Superheavy Launcher, 1 Dice
--[X]Light Industry (5/12 Dice, 1070 R)
---[X]Microcomputer Plants(Stage 3/4), 1 Dice (310 R), 66%/81%
---[X]Modernization of Home Electronics, 1 Dice (250 R), 100%/100%
---[X]Third Generation Food Programs(Stage 1/3), 3 Dice (510 R), 92%/96%
--[X]Chemical Industry (4/4 Dice, 760 R)
---[X]Intensive Development of the Caspian(Stage 2/6), 1 Dice (190 R), 100%/100%
---[X]West Siberian Gas Wells(Stage 1/10), 3 Dice (570 R), 100%/100%
--[X]Agriculture (2/4 Dice, 260 R)
---[X]Development of the Middle Volga, 1 Dice (130 R), 88%/100%
---[X]Development of the Dnieper, 1 Dice (130 R), 91%/100%
--[X]Services (10/11 Dice, 1430 R)
---[X]Expansion of Domestic Media Production(Stage 1/2), 1 Dice (160 R), 41%/56%
---[X]CNG Distribution Programs, 2 Dice (320 R), 98%/100%
---[X]Expansion of Assistive Services, 2 Dice (320 R), 56%/69%
---[X]Expansion of the Postage System, 1 Dice (150 R), 100%/100%
---[X]Storage-Distribution Networks(Stage 2/2), 2 Dice (220 R), 89%/95%
---[X]Distribution of Professional Services, 1 Dice (130 R), 100%/100%
---[X]Population Distribution Programs(Stage 3/5), 1 Dice (130 R), 95%/100%
+[X] Plan Economic Advancement and Nuclear Brainworms
+-[X]7520/7570 Resources (50 Reserve), 53 Dice Rolled
+-[X]Infrastructure (9/5 Dice, 1260 R)
+--[X]Western Local Roads(Stage 1/3), 3 Dice (420 R), 100%/100%
+--[X]Central Asian Local Roads(Stage 1/3), 3 Dice (420 R), 30%/40%
+--[X]Automotive Infrastructure(Stage 1/5), 3 Dice (420 R), 98%/99%
+-[X]Heavy Industry (4/4 Dice, 1080 R)
+--[X]Stabilization of Donbass Mining, 1 Die (200R), 40%/55%
+--[X]Atomash(Stage 4/4), 2 Dice (620 R), 91%/96%
+--[X]Vladivostok Shipyards, 1 Dice (250 R), 71%/86%
+-[X]Rocketry (4/4 Dice, 210 R)
+--[X]Launch Pad Expansions, 1 Dice (210 R), 66%/81%
+--[X]Lunar Evaluation Areas, 1 Dice
+--[X]Lunar Upper Stack Programs, 1 Dice
+--[X]Orbital Operations Concepts, 1 Dice
+-[X]Light Industry (10/12 Dice, 2040 R)
+--[X]Microcomputer Plants(Stage 4/4), 2 Dice (620 R), 89%/95%
+--[X]Third Generation Food Programs(Stage 2+3/3), 4 Dice (680 R), 85%/91%
+--[X]Textile Industry Overhauls, 2 Dice (420 R), 77%/86%
+--[X]Mixed Textile Industries(Stage 3/3), 2 Dice (320 R), 63%/75%
+-[X]Chemical Industry (6/4 Dice, 1080 R)
+--[X]Intensive Development of the Caspian(Stage 3+4/6), 2 Dice (320 R), 75%/85%
+--[X]Modernization of Oil Fields(Stage 1/4), 2 Dice (340 R), 88%/94%
+--[X]Heavy Oil Experiments, 2 Dice (420 R), 88%/94%
+-[X]Agriculture (4/4 Dice, 580 R)
+--[X]Funding for Local Beef, 2 Dice (260 R), 91%/96%
+--[X]New Preserved Meats Program, 2 Dice (320 R), 91%/96%
+-[X]Services (9/11 Dice, 1270 R)
+--[X]Expansion of Domestic Media Production(Stage 1+2/2), 2 Dice (320 R), 70%/80%
+--[X]Restaurant Assistive Funding, 2 Dice (300 R), 77%/86%
+--[X]Population Distribution Programs(Stage 4/5), 5 Dice (650 R), 69%/77%
 -[X]Bureaucracy (8/8 Dice, 0 R)
---[X]Dedicate Focus Towards a Project(Mass Commercialization of UAZ), 1 Dice
---[X]Dedicate Focus Towards a Project(Intensive Development of the Caspian), 1 Dice
---[X]Dedicate Focus Towards a Project(West Siberian Gas Wells), 1 Dice
---[X]External Outreach Enterprises, 1 Dice
---[X]Gas Implementation Commission, 1 Dice
---[X]Brief Lyudmila, 1 Dice
---[X]Expand CMEA Collaboration, 1 Dice
---[X]Stop Ecological Complaints, 1 Dice
+--[X]Work Around Ryzhkov, 1 Dice
+--[X]Consolidate Zimyanin, 1 Dice
+--[x]Form a Commission on Labor, 1 Dice
+--[X]Organize a Strategic Petroleum Reserve, 1 Dice
+--[X]Publicize Space Targets, 1 Dice
+--[X]Retaliations against the Lazy, 1 Dice
+--[X]Expand Ministry Personnel, 1 Dice
