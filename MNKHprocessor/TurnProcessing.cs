@@ -56,6 +56,7 @@ namespace MNKHprocessor
             bonus += 5; //Stat Planning
             bonus += 5; //Telecomms
             bonus += 10; //Excellent Administrator
+            bonus -= 4; // Retaliations against the Lazy and Expand Ministry Personnel 
 
             if (section.name == "Chemical Industry") {
                 bonus += 10;
