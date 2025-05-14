@@ -145,7 +145,7 @@ namespace MNKHprocessor
                 Regex isActionDC = new Regex(@"\[\](.*?):.*DC (\d+)", RegexOptions.IgnoreCase);
                 Regex isActionAny = new Regex(@"\[\](.*?):", RegexOptions.IgnoreCase);
                 Regex isActionForced = new Regex(@"\[X\](.*?):.*?(\d+) Dice", RegexOptions.IgnoreCase);
-                Regex checkMultiAction = new Regex(@"(\p{L}+)(/\p{L}+)+", RegexOptions.IgnoreCase);
+                Regex checkMultiAction = new Regex(@"\(([a-zA-Z \-]+)(/[a-zA-Z \-]+)+\)", RegexOptions.IgnoreCase);
                 Regex diceCount = new Regex(@"(\d+) Dice", RegexOptions.IgnoreCase);
                 Regex sectionModProgress = new Regex(@"(-?\d+)/Dice Malus", RegexOptions.IgnoreCase);
                 //Regex rocketryModifier = new Regex(@"Cancel Project.*?-(\d+) Dice", RegexOptions.IgnoreCase);
@@ -275,7 +275,7 @@ namespace MNKHprocessor
                                 subaction_names.Add(cap.Value.Substring(1));//remove the "/"
                             }
                             foreach (string subaction_name in subaction_names) {
-                                string replaced_name = m.Groups[1].Value.Replace(multi_check.Value, subaction_name);
+                                string replaced_name = m.Groups[1].Value.Replace(multi_check.Value, "("+subaction_name+")");
                                 ActionData new_action = new ActionData() {
                                     name = replaced_name,
                                     type = type,
