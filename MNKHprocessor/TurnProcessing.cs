@@ -298,7 +298,7 @@ namespace MNKHprocessor
                                     if (type == ACTION_TYPES.NORMAL) {
                                         new_action.prog_curr = Int32.Parse(m.Groups[3].Value);
                                         new_action.prog_max = Int32.Parse(m.Groups[4].Value);
-                                    } else { Debug.Assert(type == ACTION_TYPES.NOROLL); }
+                                    } else { Debug.Assert(type == ACTION_TYPES.NOROLL || type == ACTION_TYPES.REFORM); }
                                 }
                                 new_action.bonus = get_bonus(new_action.name, sections[section_curr]);
                                 sections[section_curr].actions.Add(new_action);
