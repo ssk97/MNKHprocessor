@@ -56,6 +56,7 @@ namespace MNKHprocessor
                             }
                             continue;
                         }
+                        if (s.Contains("Cancel Project")) { continue; }
                         planList.Add(s);
                     }
                 }
