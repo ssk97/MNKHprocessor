@@ -282,11 +282,6 @@ namespace MNKHprocessor
                                     position = current_action_position++,
                                     section_name = sections[section_curr].name,
                                 };
-                                if (type == ACTION_TYPES.NORMAL) {
-                                    new_action.rpd = Int32.Parse(m.Groups[2].Value);
-                                } else {
-                                    new_action.rpd = 0;
-                                }
                                 //language=regex
                                 Regex find_subaction_progress = new Regex(subaction_name + @"\W+(\d+)/(\d+)", RegexOptions.IgnoreCase);
                                 Match subaction_progress = find_subaction_progress.Match(s);
@@ -299,7 +294,20 @@ namespace MNKHprocessor
                                         new_action.prog_max = Int32.Parse(m.Groups[4].Value);
                                     } else { Debug.Assert(type == ACTION_TYPES.NOROLL || type == ACTION_TYPES.REFORM); }
                                 }
-                                new_action.bonus = get_bonus(new_action.name, sections[section_curr]);
+                                switch (type) {
+                                    case ACTION_TYPES.REFORM:
+                                        new_action.rpd = 0;
+                                        new_action.bonus = get_reform_bonus(new_action.name, sections[section_curr]);
+                                        break;
+                                    case ACTION_TYPES.DC:
+                                        new_action.rpd = 0;
+                                        new_action.bonus = get_bonus(new_action.name, sections[section_curr]);
+                                        break;
+                                    case ACTION_TYPES.NORMAL:
+                                        new_action.rpd = Int32.Parse(m.Groups[2].Value);
+                                        new_action.bonus = get_bonus(new_action.name, sections[section_curr]);
+                                        break;
+                                }
                                 sections[section_curr].actions.Add(new_action);
                             }
                         }
